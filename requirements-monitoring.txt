@@ -1,0 +1,2 @@
+# Optional NVIDIA resource metrics.
+nvidia-ml-py==13.610.43

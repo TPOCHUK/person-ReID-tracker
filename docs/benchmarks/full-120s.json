@@ -1,0 +1,188 @@
+{
+    "metadata": {
+        "test_name": "full_pipeline",
+        "description": "Повний CV pipeline: YOLO + утримання цілі + ReID + оверлей",
+        "created_at": "2026-11-14T12:33:56.258902+00:00",
+        "duration_seconds": 120.01,
+        "warmup_seconds": 10.0,
+        "source": "file: videos/test.mp4",
+        "system_samples": 119
+    },
+    "config": {
+        "conf_threshold": 0.8,
+        "similarity_threshold": 0.7,
+        "max_lost_frames": 30,
+        "reid_update_interval": 10,
+        "reid_update_conf": 0.8,
+        "reid_recovery_interval": 5,
+        "reid_recovery_start": 5,
+        "reid_embedding_alpha": 0.2,
+        "recovery_max_candidates": 8,
+        "yolo_model": "yolov8n.pt",
+        "reid_model": "yolo26n-reid.onnx",
+        "yolo_tracker": "bytetrack.yaml",
+        "detector_conf": 0.25,
+        "imgsz": 256,
+        "device": "cpu",
+        "half": false,
+        "torch_threads": 2,
+        "cv_threads": 1,
+        "camera_width": 640,
+        "camera_height": 480,
+        "jpeg_quality": 70,
+        "stream_max_fps": 15.0
+    },
+    "hardware": {
+        "os": "Windows-10-10.0.19045-SP0",
+        "python": "3.13.12",
+        "cpu_model": "Intel64 Family 6 Model 94 Stepping 3, GenuineIntel",
+        "cpu_logical_cores": 4,
+        "ram_total_mb": 8091,
+        "gpu": "NVIDIA GeForce GTX 950M",
+        "torch": "2.14.0+cpu",
+        "torch_cuda_available": false,
+        "ultralytics": "8.4.138",
+        "opencv": "5.0.0"
+    },
+    "performance": {
+        "frames": 3285,
+        "fps": {
+            "overall": 27.37,
+            "per_second": {
+                "seconds": 120,
+                "mean": 27.37,
+                "std": 10.0,
+                "min": 5,
+                "p5": 6.0,
+                "max": 42
+            }
+        },
+        "latency_ms": {
+            "capture_ms": {
+                "mean": 4.026,
+                "std": 2.122,
+                "min": 2.727,
+                "p50": 3.442,
+                "p95": 7.403,
+                "p99": 12.975,
+                "max": 50.692
+            },
+            "inference_ms": {
+                "mean": 31.11,
+                "std": 30.191,
+                "min": 18.443,
+                "p50": 21.897,
+                "p95": 74.419,
+                "p99": 149.741,
+                "max": 717.319
+            },
+            "post_ms": {
+                "mean": 0.081,
+                "std": 0.045,
+                "min": 0.006,
+                "p50": 0.087,
+                "p95": 0.12,
+                "p99": 0.19,
+                "max": 1.134
+            },
+            "tracking_ms": {
+                "mean": 0.81,
+                "std": 4.859,
+                "min": 0.004,
+                "p50": 0.01,
+                "p95": 0.046,
+                "p99": 16.007,
+                "max": 87.16
+            },
+            "draw_ms": {
+                "mean": 0.118,
+                "std": 0.079,
+                "min": 0.058,
+                "p50": 0.119,
+                "p95": 0.171,
+                "p99": 0.256,
+                "max": 3.595
+            },
+            "total_ms": {
+                "mean": 32.121,
+                "std": 31.084,
+                "min": 18.513,
+                "p50": 22.253,
+                "p95": 76.479,
+                "p99": 152.402,
+                "max": 717.573
+            }
+        },
+        "detection": {
+            "avg_persons_per_frame": 1.228,
+            "frames_with_person_percent": 83.68,
+            "target_visible_percent": 35.34
+        }
+    },
+    "system": {
+        "cpu_process_percent": {
+            "mean": 256.975,
+            "std": 85.213,
+            "min": 0.0,
+            "p50": 297.3,
+            "p95": 333.74,
+            "p99": 340.614,
+            "max": 341.5
+        },
+        "cpu_process_norm_percent": {
+            "mean": 64.244,
+            "std": 21.303,
+            "min": 0.0,
+            "p50": 74.33,
+            "p95": 83.435,
+            "p99": 85.158,
+            "max": 85.38
+        },
+        "cpu_system_percent": {
+            "mean": 90.803,
+            "std": 10.911,
+            "min": 0.0,
+            "p50": 90.3,
+            "p95": 100.0,
+            "p99": 100.0,
+            "max": 100.0
+        },
+        "ram_process_mb": {
+            "mean": 445.333,
+            "std": 5.807,
+            "min": 436.09,
+            "p50": 443.88,
+            "p95": 456.46,
+            "p99": 458.856,
+            "max": 459.05
+        },
+        "ram_system_percent": {
+            "mean": 83.139,
+            "std": 1.22,
+            "min": 80.7,
+            "p50": 83.3,
+            "p95": 85.01,
+            "p99": 85.828,
+            "max": 86.6
+        },
+        "gpu_percent": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "p50": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0
+        },
+        "vram_mb": {
+            "mean": 46.5,
+            "std": 0.0,
+            "min": 46.5,
+            "p50": 46.5,
+            "p95": 46.5,
+            "p99": 46.5,
+            "max": 46.5
+        }
+    },
+    "ram_trend_mb_per_min": 3.53
+}

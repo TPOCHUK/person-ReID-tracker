@@ -1,0 +1,33 @@
+{
+  "source": "test.mp4",
+  "clients": 8,
+  "start": {
+    "status": "started"
+  },
+  "target": {
+    "found": true,
+    "state": "tracking",
+    "target_id": 1,
+    "bbox": [
+      347,
+      84,
+      1172,
+      720
+    ],
+    "lost_frames": 0,
+    "fps": 0.0,
+    "inference_ms": 4097.71,
+    "total_ms": 4206.72
+  },
+  "mjpeg": "JPEG received",
+  "http": {
+    "successful": 100,
+    "p50_ms": 19.6,
+    "p95_ms": 23.54,
+    "max_ms": 27.5
+  },
+  "stop": {
+    "status": "stopped"
+  },
+  "restart": "passed"
+}

@@ -1,0 +1,46 @@
+{
+  "system_cpu_percent": 95.2,
+  "ram_percent": 89.7,
+  "top_cpu_processes": [
+    {
+      "name": "vmmem",
+      "cpu_percent": 157.1,
+      "rss_mb": 1797.4
+    },
+    {
+      "name": "com.docker.backend.exe",
+      "cpu_percent": 60.5,
+      "rss_mb": 105.8
+    },
+    {
+      "name": "python.exe",
+      "cpu_percent": 58.8,
+      "rss_mb": 16.7
+    },
+    {
+      "name": "wsl.exe",
+      "cpu_percent": 25.6,
+      "rss_mb": 5.3
+    },
+    {
+      "name": "System Idle Process",
+      "cpu_percent": 24.5,
+      "rss_mb": 0.0
+    },
+    {
+      "name": "System",
+      "cpu_percent": 13.4,
+      "rss_mb": 1.1
+    },
+    {
+      "name": "MsMpEng.exe",
+      "cpu_percent": 3.7,
+      "rss_mb": 214.8
+    },
+    {
+      "name": "chrome.exe",
+      "cpu_percent": 3.3,
+      "rss_mb": 182.3
+    }
+  ]
+}

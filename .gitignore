@@ -1,0 +1,33 @@
+# Local settings.
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.vscode/
+.idea/
+
+# Models and recordings.
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+videos/
+*.mp4
+*.avi
+*.mov
+
+# Generated files.
+benchmark_results/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp/
+.pytest_venv_tmp/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+
+.tooling/
